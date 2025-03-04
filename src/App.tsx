@@ -3,34 +3,88 @@ import { useState } from "react";
 import { Github, Linkedin, Mail, ExternalLink, Code, BookOpen, Briefcase, Download, ChevronRight } from 'lucide-react';
 import { FaPhone , FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'; // Example using Font Awesome
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gray-50">
   {/* Navigation */}
-  <nav className="bg-white shadow-sm">
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex justify-between h-16">
-        <div className="flex items-center">
-          <span className="text-xl font-bold text-gray-900">Pranav V</span>
+  <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between h-16 items-center">
+            <div className="flex items-center">
+              <span className="text-xl font-bold text-gray-900 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                Pranav V
+              </span>
+            </div>
+            
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-6 flex-1 justify-center">
+              {['About', 'Skills', 'Experience', 'Projects', 'Certifications', 'Contact'].map((item) => (
+                <a 
+                  key={item}
+                  href={`#${item.toLowerCase()}`} 
+                  className="px-3 py-2 text-sm font-medium text-gray-500 hover:text-indigo-600 transition-colors relative group"
+                >
+                  {item}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
+                </a>
+              ))}
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex items-center space-x-4">
+              <a href="https://github.com/pranav-8660" target="_blank" rel="noopener noreferrer" 
+                className="p-2 rounded-lg text-gray-500 hover:bg-gray-100 transition-colors">
+                <Github size={20} />
+              </a>
+              <a href="https://www.linkedin.com/in/pranav-v-273403229/" target="_blank" rel="noopener noreferrer" 
+                className="p-2 rounded-lg text-gray-500 hover:bg-gray-100 transition-colors">
+                <Linkedin size={20} />
+              </a>
+              
+              {/* Mobile Menu Button */}
+              <button 
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="md:hidden p-2 rounded-lg text-gray-500 hover:bg-gray-100"
+              >
+                {isMenuOpen ? (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                ) : (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                )}
+              </button>
+            </div>
+          </div>
         </div>
-        <div className="hidden md:flex items-center space-x-8">
-          <a href="#about" className="text-gray-700 hover:text-indigo-600 transition-colors">About</a>
-          <a href="#skills" className="text-gray-700 hover:text-indigo-600 transition-colors">Skills</a>
-          <a href="#experience" className="text-gray-700 hover:text-indigo-600 transition-colors">Experience</a>
-          <a href="#projects" className="text-gray-700 hover:text-indigo-600 transition-colors">Projects</a>
-          <a href="#certifications" className="text-gray-700 hover:text-indigo-600 transition-colors">Certifications</a>
-          <a href="#contact" className="text-gray-700 hover:text-indigo-600 transition-colors">Contact</a>
+
+        {/* Mobile Menu */}
+        <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} transition-all duration-300 ease-out`}>
+          <div className="px-4 pt-2 pb-4 space-y-2">
+            {['About', 'Skills', 'Experience', 'Projects', 'Certifications', 'Contact'].map((item) => (
+              <a 
+                key={item}
+                href={`#${item.toLowerCase()}`} 
+                onClick={() => setIsMenuOpen(false)}
+                className="block px-4 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-50"
+              >
+                {item}
+              </a>
+            ))}
+            <div className="pt-4 border-t border-gray-100 flex space-x-4 justify-center">
+              <a href="https://github.com/pranav-8660" className="text-gray-500 hover:text-gray-700">
+                <Github size={20} />
+              </a>
+              <a href="https://www.linkedin.com/in/pranav-v-273403229/" className="text-gray-500 hover:text-gray-700">
+                <Linkedin size={20} />
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="flex items-center space-x-4">
-          <a href="https://github.com/pranav-8660" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700">
-            <Github size={20} />
-          </a>
-          <a href="https://www.linkedin.com/in/pranav-v-273403229/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700">
-            <Linkedin size={20} />
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
+      </nav>
 
       {/* Hero Section */}
 <header className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
