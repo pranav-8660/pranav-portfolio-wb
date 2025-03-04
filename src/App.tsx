@@ -438,6 +438,104 @@ function App() {
     
   </div>
 </section>
+{/* Certifications Section */}
+<section id="certifications" className="py-16 bg-white">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Certifications</h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* Certification 1 */}
+      <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+        <img 
+          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+          alt="AWS Certified" 
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-gray-900 mb-2">AWS Certified Solutions Architect – Associate</h3>
+          <p className="text-gray-700 mb-4">
+            Credential demonstrating expertise in designing scalable, cost-efficient, and secure applications on AWS.
+          </p>
+          <a href="https://www.credly.com/badges/example" className="text-indigo-600 hover:text-indigo-800 flex items-center">
+            <ExternalLink size={16} className="mr-1" /> View Certification
+          </a>
+        </div>
+      </div>
+
+      {/* Certification 2 */}
+      <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+        <img 
+          src="https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+          alt="CKA Certification" 
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-gray-900 mb-2">Certified Kubernetes Administrator (CKA)</h3>
+          <p className="text-gray-700 mb-4">
+            Industry-recognized certification for Kubernetes cluster management, networking, and security.
+          </p>
+          <a href="https://www.credly.com/badges/example" className="text-indigo-600 hover:text-indigo-800 flex items-center">
+            <ExternalLink size={16} className="mr-1" /> View Certification
+          </a>
+        </div>
+      </div>
+
+      {/* Certification 3 */}
+      <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+        <img 
+          src="https://images.unsplash.com/photo-1606768667367-2d5390ef04d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+          alt="Terraform" 
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-gray-900 mb-2">HashiCorp Certified: Terraform Associate</h3>
+          <p className="text-gray-700 mb-4">
+            Certification proving expertise in Infrastructure as Code (IaC) and automation with Terraform.
+          </p>
+          <a href="https://www.credly.com/badges/example" className="text-indigo-600 hover:text-indigo-800 flex items-center">
+            <ExternalLink size={16} className="mr-1" /> View Certification
+          </a>
+        </div>
+      </div>
+
+      {/* Certification 4 */}
+      <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+        <img 
+          src="https://images.unsplash.com/photo-1603484477859-abe3a04ff024?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+          alt="Docker" 
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-gray-900 mb-2">Docker Certified Associate (DCA)</h3>
+          <p className="text-gray-700 mb-4">
+            Official certification for Docker fundamentals, container orchestration, and deployment best practices.
+          </p>
+          <a href="https://www.credly.com/badges/example" className="text-indigo-600 hover:text-indigo-800 flex items-center">
+            <ExternalLink size={16} className="mr-1" /> View Certification
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {/* View More Certifications Section */}
+    <div className="mt-12 text-center">
+      <p className="text-gray-600 mb-4">
+        View all my certifications on my LinkedIn profile!
+      </p>
+      <a
+        href="https://www.linkedin.com/in/pranav-v-273403229/details/certifications/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200"
+      >
+        <ExternalLink className="mr-2 h-5 w-5" />
+        View Certifications
+      </a>
+    </div>
+
+  </div>
+</section>
+
 
     <section id="contact" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
