@@ -96,7 +96,7 @@ function App() {
           Currently interning at <strong>Practo</strong>, I have been working on implementing <strong>DevOps solutions, infrastructure automation, and backend optimization</strong>. My experience spans building effecient microservices, backend systems, cloud platforms, Docker, Kubernetes and distributed systems.
         </p>
         <p className="text-lg text-gray-700 mb-6">
-          Apart from my internship, I have built several projects, including a DevOps Dashboard, an Automated API Health Checker, and a Distributed Logging & Monitoring System.I have also deployed multiple microservices to cloud using various containerization and orchestration tools. These experiences have helped me sharpen my problem-solving skills and real-world application of SRE principles.
+          Apart from my internship, I have built several projects, including a DevOps Dashboard, an Automated API Health Checker, and a Distributed Logging & Monitoring System. I have also deployed multiple microservices to cloud using various containerization and orchestration tools. These experiences have helped me sharpen my problem-solving skills and real-world application of Backend, DevOps and SRE principles.
         </p>
         <p className="text-lg text-gray-700">
           When I'm not coding, I enjoy exploring new cloud technologies, contributing to open-source projects, and sharing knowledge through tech blogs and discussions. I'm always eager to take on new challenges and contribute to impactful projects.
