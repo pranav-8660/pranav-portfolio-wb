@@ -1,6 +1,12 @@
 import React from 'react';
 import { useState } from "react";
+
 import softimg from "./assets/softimg.jpeg";
+import terracert from "./assets/teracert.png";
+import awsscert from "./assets/awssscert.jpg";
+import javacert from "./assets/javacert.png";
+import databasecert from "./assets/databasecert.png";
+
 import { Github, Linkedin, Mail, ExternalLink, Code, BookOpen, Briefcase, Download, ChevronRight } from 'lucide-react';
 import { FaPhone , FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'; // Example using Font Awesome
 function App() {
@@ -502,7 +508,7 @@ function App() {
       {/* Certification 1 */}
       <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
         <img 
-          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+          src={awsscert}
           alt="AWS Academy Cloud Foundations" 
           className="w-full h-48 object-cover"
         />
@@ -520,7 +526,7 @@ function App() {
       {/* Certification 2 */}
       <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
         <img 
-          src="https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+          src={terracert}
           alt="CKA Certification" 
           className="w-full h-48 object-cover"
         />
@@ -538,7 +544,7 @@ function App() {
       {/* Certification 3 */}
       <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
         <img 
-          src="https://images.unsplash.com/photo-1606768667367-2d5390ef04d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+          src={javacert} 
           alt="Terraform" 
           className="w-full h-48 object-cover"
         />
@@ -556,7 +562,7 @@ function App() {
       {/* Certification 4 */}
       <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
         <img 
-          src="https://images.unsplash.com/photo-1603484477859-abe3a04ff024?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+          src={databasecert}
           alt="Docker" 
           className="w-full h-48 object-cover"
         />
