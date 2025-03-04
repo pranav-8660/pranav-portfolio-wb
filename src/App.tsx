@@ -6,6 +6,7 @@ import terracert from "./assets/teracert.png";
 import awsscert from "./assets/awssscert.jpg";
 import javacert from "./assets/javacert.png";
 import databasecert from "./assets/databasecert.png";
+import officeaif from "./assets/officeman.avif";
 
 import { Github, Linkedin, Mail, ExternalLink, Code, BookOpen, Briefcase, Download, ChevronRight } from 'lucide-react';
 import { FaPhone , FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'; // Example using Font Awesome
@@ -128,7 +129,7 @@ function App() {
       </div>
       <div className="hidden md:block md:w-2/5">
         <img 
-          src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+          src={officeaif}
           alt="Pranav V - Software Engineer" 
           className="rounded-lg shadow-xl"
         />
