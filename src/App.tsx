@@ -117,7 +117,7 @@ function App() {
       <div className="bg-white p-6 rounded-lg shadow-md">
         <h3 className="text-xl font-semibold text-gray-900 mb-4">Programming Languages</h3>
         <ul className="space-y-2">
-          {[{ name: "C", level: 6 }, { name: "C++", level: 6 }, { name: "Java", level: 8 }, { name: "Python", level: 7 }, { name: "Shell", level: 5 }].map((skill) => (
+          {[{ name: "C", level: 6 }, { name: "C++", level: 5 }, { name: "Java", level: 8 }, { name: "Python", level: 6 }, { name: "Shell", level: 5 }].map((skill) => (
             <li key={skill.name} className="flex items-center">
               <span className="w-32 font-medium text-gray-700">{skill.name}</span>
               <div className="flex-1 bg-gray-200 rounded-full h-2">
@@ -147,7 +147,7 @@ function App() {
       <div className="bg-white p-6 rounded-lg shadow-md">
         <h3 className="text-xl font-semibold text-gray-900 mb-4">Databases</h3>
         <ul className="space-y-2">
-          {[{ name: "MySQL", level: 7 }, { name: "MongoDB", level: 6 }, { name: "PostgreSQL", level: 7 }].map((skill) => (
+          {[{ name: "MySQL", level: 7 }, { name: "MongoDB", level: 6 }, { name: "PostgreSQL", level: 5 }].map((skill) => (
             <li key={skill.name} className="flex items-center">
               <span className="w-32 font-medium text-gray-700">{skill.name}</span>
               <div className="flex-1 bg-gray-200 rounded-full h-2">
@@ -162,7 +162,7 @@ function App() {
       <div className="bg-white p-6 rounded-lg shadow-md">
         <h3 className="text-xl font-semibold text-gray-900 mb-4">Cloud Platforms</h3>
         <ul className="space-y-2">
-          {[{ name: "AWS (S3, EC2, RDS, EKS)", level: 7 }, { name: "GCP (Google Kubernetes Engine)", level: 5 }].map((skill) => (
+          {[{ name: "AWS-S3", level: 6 },{ name: "AWS-RDS", level: 7 },{ name: "AWS-EC2", level: 6 },{ name: "AWS-EKS", level: 4 },{ name: "AWS-IAM", level: 3 }, { name: "GCP-GKE", level: 5 }].map((skill) => (
             <li key={skill.name} className="flex items-center">
               <span className="w-48 font-medium text-gray-700">{skill.name}</span>
               <div className="flex-1 bg-gray-200 rounded-full h-2">
@@ -177,7 +177,7 @@ function App() {
       <div className="bg-white p-6 rounded-lg shadow-md">
         <h3 className="text-xl font-semibold text-gray-900 mb-4">Other</h3>
         <ul className="space-y-2">
-          {[{ name: "JPA", level: 7 }, { name: "Hibernate", level: 6 }, { name: "GenAI", level: 5 }, { name: "FastAPI", level: 6 }, { name: "Prometheus", level: 5 }, { name: "Grafana", level: 5 }].map((skill) => (
+          {[{ name: "JPA", level: 7 }, { name: "Hibernate", level: 6 }, { name: "GenAI", level: 5 }, { name: "FastAPI", level: 6 }, { name: "Prometheus", level: 3 }, { name: "Grafana", level: 2 }].map((skill) => (
             <li key={skill.name} className="flex items-center">
               <span className="w-32 font-medium text-gray-700">{skill.name}</span>
               <div className="flex-1 bg-gray-200 rounded-full h-2">
