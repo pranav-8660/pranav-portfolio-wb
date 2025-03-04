@@ -706,27 +706,58 @@ function App() {
  
 
       {/* Footer */}
-<footer className="bg-gray-900 text-white py-8">
+<footer className="bg-gray-900 text-white pt-12 pb-6">
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="md:flex md:items-center md:justify-between">
-      <div className="text-center md:text-left mb-4 md:mb-0">
-        <p className="text-lg font-semibold">Pranav</p>
-        <p className="text-gray-400">Software Engineering Intern</p>
+      {/* Left Section */}
+      <div className="text-center md:text-left mb-8 md:mb-0 space-y-2">
+        <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          Pranav Venkatesh
+        </h2>
+        <p className="text-gray-400 font-medium">Building Digital Experiences</p>
       </div>
-      <div className="flex justify-center md:justify-end space-x-6">
-        <a href="https://github.com/pranav-8660" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-          <Github size={20} />
+
+      {/* Social Links */}
+      <div className="flex justify-center md:justify-end space-x-8">
+        <a 
+          href="https://github.com/pranav-8660" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+          aria-label="GitHub Profile"
+        >
+          <Github size={24} className="hover:scale-110 transition-transform" />
         </a>
-        <a href="https://linkedin.com/in/pranav-v-273403229/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-          <Linkedin size={20} />
+        <a 
+          href="https://linkedin.com/in/pranav-v-273403229/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+          aria-label="LinkedIn Profile"
+        >
+          <Linkedin size={24} className="hover:scale-110 transition-transform" />
         </a>
-        <a href="mailto:pranavcse2003@gmail.com" className="text-gray-400 hover:text-white">
-          <Mail size={20} />
+        <a 
+          href="mailto:pranavcse2003@gmail.com" 
+          className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+          aria-label="Send Email"
+        >
+          <Mail size={24} className="hover:scale-110 transition-transform" />
         </a>
       </div>
     </div>
-    <div className="mt-8 text-center md:text-left text-gray-400 text-sm">
-      <p>&copy; {new Date().getFullYear()} Pranav. All rights reserved.</p>
+
+    {/* Divider */}
+    <hr className="my-8 border-gray-700" />
+
+    {/* Copyright */}
+    <div className="text-center md:text-left">
+      <p className="text-gray-400 text-sm">
+        &copy; {new Date().getFullYear()} Pranav V. All rights reserved.
+      </p>
+      <p className="text-gray-500 text-xs mt-2">
+        Crafted with passion and React
+      </p>
     </div>
   </div>
 </footer>
