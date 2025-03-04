@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from "react";
+import softimg from "./assets/softimg.jpeg";
 import { Github, Linkedin, Mail, ExternalLink, Code, BookOpen, Briefcase, Download, ChevronRight } from 'lucide-react';
 import { FaPhone , FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'; // Example using Font Awesome
 function App() {
@@ -137,7 +138,7 @@ function App() {
     <div className="md:flex md:items-center md:gap-12">
       <div className="md:w-1/3 mb-8 md:mb-0">
         <img 
-          src="https://images.unsplash.com/photo-1598257006626-9c85b9f23664?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+          src={softimg}
           alt="Software Engineer at work" 
           className="rounded-lg shadow-md"
         />
