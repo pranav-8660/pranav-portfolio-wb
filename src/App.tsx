@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
 
-       
+
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -180,9 +180,9 @@ function App() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Technical Skills</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-wrap gap-8">
             {/* Programming Languages */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="w-full md:w-[calc((100%-4rem)/3)] bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Programming Languages</h3>
               <ul className="space-y-2">
                 {[{ name: "C", level: 6 }, { name: "C++", level: 5 }, { name: "Java", level: 8 }, { name: "Python", level: 6 }, { name: "Shell", level: 5 }].map((skill) => (
@@ -197,7 +197,7 @@ function App() {
             </div>
 
             {/* Frameworks & Tools */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="w-full md:w-[calc((100%-4rem)/3)] bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Frameworks & Tools</h3>
               <ul className="space-y-2">
                 {[{ name: "Spring", level: 7 }, { name: "Spring Boot", level: 8 }, { name: "Docker", level: 7 }, { name: "Kubernetes", level: 6 }, { name: "Terraform", level: 5 }, { name: "REST APIs", level: 8 }, { name: "Microservices", level: 7 }].map((skill) => (
@@ -212,7 +212,7 @@ function App() {
             </div>
 
             {/* Databases */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="w-full md:w-[calc((100%-4rem)/3)] bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Databases</h3>
               <ul className="space-y-2">
                 {[{ name: "MySQL", level: 7 }, { name: "MongoDB", level: 6 }, { name: "PostgreSQL", level: 5 }].map((skill) => (
@@ -227,7 +227,7 @@ function App() {
             </div>
 
             {/* Cloud Platforms */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="w-full md:w-[calc((100%-4rem)/3)] bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Cloud Platforms</h3>
               <ul className="space-y-2">
                 {[{ name: "AWS-S3", level: 6 }, { name: "AWS-RDS", level: 7 }, { name: "AWS-EC2", level: 6 }, { name: "AWS-EKS", level: 4 }, { name: "AWS-IAM", level: 3 }, { name: "GCP-GKE", level: 5 }].map((skill) => (
@@ -242,7 +242,7 @@ function App() {
             </div>
 
             {/* Other */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="w-full md:w-[calc((100%-4rem)/3)] bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Other</h3>
               <ul className="space-y-2">
                 {[{ name: "JPA", level: 7 }, { name: "Hibernate", level: 6 }, { name: "GenAI", level: 5 }, { name: "FastAPI", level: 6 }, { name: "Prometheus", level: 3 }, { name: "Grafana", level: 2 }].map((skill) => (
