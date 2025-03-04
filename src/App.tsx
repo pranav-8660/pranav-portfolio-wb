@@ -503,15 +503,15 @@ function App() {
       <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
         <img 
           src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-          alt="AWS Certified" 
+          alt="AWS Academy Cloud Foundations" 
           className="w-full h-48 object-cover"
         />
         <div className="p-6">
-          <h3 className="text-xl font-bold text-gray-900 mb-2">AWS Certified Solutions Architect – Associate</h3>
+          <h3 className="text-xl font-bold text-gray-900 mb-2">AWS Academy Cloud Foundations</h3>
           <p className="text-gray-700 mb-4">
             Credential demonstrating expertise in designing scalable, cost-efficient, and secure applications on AWS.
           </p>
-          <a href="https://www.credly.com/badges/example" className="text-indigo-600 hover:text-indigo-800 flex items-center">
+          <a href="https://www.credly.com/badges/921ec538-b270-447c-bd0a-6bc6a3a5a24d/print" className="text-indigo-600 hover:text-indigo-800 flex items-center">
             <ExternalLink size={16} className="mr-1" /> View Certification
           </a>
         </div>
@@ -525,11 +525,11 @@ function App() {
           className="w-full h-48 object-cover"
         />
         <div className="p-6">
-          <h3 className="text-xl font-bold text-gray-900 mb-2">Certified Kubernetes Administrator (CKA)</h3>
+          <h3 className="text-xl font-bold text-gray-900 mb-2">Udemy Labs- Terraform for Beginners, KodeKloud</h3>
           <p className="text-gray-700 mb-4">
-            Industry-recognized certification for Kubernetes cluster management, networking, and security.
+            It provides hands-on experience in Infrastructure as Code (IaC) using Terraform. It covers core concepts like providers, modules, state management, and deployment on cloud platforms.
           </p>
-          <a href="https://www.credly.com/badges/example" className="text-indigo-600 hover:text-indigo-800 flex items-center">
+          <a href="https://certificates.kodekloud.com/294a9d2f-8bd0-4b3b-a0ab-81daf56023de/37c7f3c6-d60f-477c-8e71-3a7907facca7/1fdf0ef1-76ea-4e4f-9da8-bcda202f5e62.pdf" className="text-indigo-600 hover:text-indigo-800 flex items-center">
             <ExternalLink size={16} className="mr-1" /> View Certification
           </a>
         </div>
@@ -543,11 +543,11 @@ function App() {
           className="w-full h-48 object-cover"
         />
         <div className="p-6">
-          <h3 className="text-xl font-bold text-gray-900 mb-2">HashiCorp Certified: Terraform Associate</h3>
+          <h3 className="text-xl font-bold text-gray-900 mb-2">Udemy-Master Spring Boot 3 & Spring Framework 6 with Java</h3>
           <p className="text-gray-700 mb-4">
-            Certification proving expertise in Infrastructure as Code (IaC) and automation with Terraform.
+          To build modern, scalable applications using the latest Spring technologies. It includes hands-on projects, Spring Boot fundamentals, REST API development, microservices, security, and database integration.
           </p>
-          <a href="https://www.credly.com/badges/example" className="text-indigo-600 hover:text-indigo-800 flex items-center">
+          <a href="https://www.udemy.com/certificate/UC-75ae86da-dbf8-44ed-bbe8-a7e01de00fe7/" className="text-indigo-600 hover:text-indigo-800 flex items-center">
             <ExternalLink size={16} className="mr-1" /> View Certification
           </a>
         </div>
@@ -561,11 +561,11 @@ function App() {
           className="w-full h-48 object-cover"
         />
         <div className="p-6">
-          <h3 className="text-xl font-bold text-gray-900 mb-2">Docker Certified Associate (DCA)</h3>
+          <h3 className="text-xl font-bold text-gray-900 mb-2">NPTEL-Data Base Management System</h3>
           <p className="text-gray-700 mb-4">
-            Official certification for Docker fundamentals, container orchestration, and deployment best practices.
+            It provides a foundational understanding of database concepts, SQL, relational models, normalization, indexing, and transactions. It covers both theoretical and practical aspects, making it ideal for mastering DBMS principles.
           </p>
-          <a href="https://www.credly.com/badges/example" className="text-indigo-600 hover:text-indigo-800 flex items-center">
+          <a href="https://archive.nptel.ac.in/content/noc/NOC23/SEM2/Ecertificates/106/noc23-cs79/Course/NPTEL23CS79S3464106410092374.pdf" className="text-indigo-600 hover:text-indigo-800 flex items-center">
             <ExternalLink size={16} className="mr-1" /> View Certification
           </a>
         </div>
