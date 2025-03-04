@@ -55,7 +55,7 @@ function App() {
             <ChevronRight size={16} className="ml-2" />
           </a>
           <a 
-            href="https://drive.google.com/your-resume-link"  // Replace with actual resume link
+            href="https://drive.google.com/file/d/1NOLNNsQhHJW4_8c5ES5IRgk6mlfzhdVf/view?usp=drivesdk"  // Replace with actual resume link
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-800 bg-opacity-60 hover:bg-opacity-70 transition-colors"
