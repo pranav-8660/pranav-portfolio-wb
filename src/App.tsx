@@ -418,7 +418,24 @@ function App() {
           </a>
         </div>
       </div>
+      
     </div>
+    {/* GitHub CTA Section */}
+    <div className="mt-12 text-center">
+      <p className="text-gray-600 mb-4">
+        Explore more innovative projects on my GitHub profile!
+      </p>
+      <a
+        href="https://github.com/pranav-8660"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200"
+      >
+        <Github className="mr-2 h-5 w-5" />
+        Visit My GitHub
+      </a>
+    </div>
+    
   </div>
 </section>
 
@@ -455,6 +472,7 @@ function App() {
                 </button>
               </form>
             </div>
+            
           </div>
 
           {/* Contact Information */}
