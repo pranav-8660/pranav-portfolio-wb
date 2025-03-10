@@ -1,5 +1,11 @@
 import React from 'react';
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
+import { createRequire } from 'module';
+import { getServiceID, getTemplateId, getApiPublicKey } from "../pass.ts";
+
+
+
 
 import softimg from "./assets/softimg.jpeg";
 import terracert from "./assets/teracert.png";
@@ -606,6 +612,7 @@ function App() {
 
 
       <section id="contact" className="py-16 bg-white">
+          
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Get In Touch</h2>
 
@@ -614,21 +621,43 @@ function App() {
             <div className="md:w-1/2 mb-8 md:mb-0">
               <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Send a Message</h3>
-                <form className="space-y-4">
+                <form className="space-y-4" onSubmit={(e) => {
+                  e.preventDefault();
+                  const formData = new FormData(e.currentTarget);
+                  const pass = require('../pass.js');
+                  emailjs.sendForm(
+                    "getServiceID()",
+                    "getTemplateId()",
+                    e.currentTarget,
+                    "getApiPublicKey()"
+                  )
+                  .then((result) => {
+                    alert('Message sent successfully!');
+                    (e.target as HTMLFormElement).reset();
+                  }, (error) => {
+                    alert('Failed to send message. Please try again.');
+                  });
+                }}>
                   <input
                     type="text"
+                    name="user_name"
                     placeholder="Your Name"
                     className="w-full p-3 border border-gray-300 rounded-md"
+                    required
                   />
                   <input
                     type="email"
+                    name="user_email"
                     placeholder="Your Email"
                     className="w-full p-3 border border-gray-300 rounded-md"
+                    required
                   />
                   <textarea
                     rows={4}
+                    name="message"
                     placeholder="Your Message"
                     className="w-full p-3 border border-gray-300 rounded-md"
+                    required
                   ></textarea>
                   <button
                     type="submit"
@@ -638,6 +667,7 @@ function App() {
                   </button>
                 </form>
               </div>
+            
 
             </div>
 
