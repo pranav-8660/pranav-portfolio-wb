@@ -624,15 +624,14 @@ function App() {
                 <form className="space-y-4" onSubmit={(e) => {
                   e.preventDefault();
                   const formData = new FormData(e.currentTarget);
-                  const pass = require('../pass.js');
                   emailjs.sendForm(
-                    "getServiceID()",
-                    "getTemplateId()",
+                    "service_4z50v34",
+                    "template_tg50uh4",
                     e.currentTarget,
-                    "getApiPublicKey()"
+                    "5k2mn6f067zVMLd0J"
                   )
                   .then((result) => {
-                    alert('Message sent successfully!');
+                    alert('Email-Message sent successfully!');
                     (e.target as HTMLFormElement).reset();
                   }, (error) => {
                     alert('Failed to send message. Please try again.');
